@@ -1,0 +1,9 @@
+Kreirati bazu sa tabelom Klijent sa poljima user, pass i ručno popuniti nekoliko Klijenata u bazu, 					(10 bodova)
+Kreirati KlijentDAO klasu sa metodama:
+o	bool klientExist (String user, String pass): proverava da li postoji klijent u bazi sa ovim parametrima 			(15 bodova)
+Kreirati index.php sa formom za prosleđivanje parametara user I pass na Servlet pomoću tabele. 					(10 bodova)
+Kreirati Kontroler koji u :
+o	doPost sa prosleđenim parametrom ako klijent POSTOJI u bazi  prosledi Klijenta preko sesije na prikaz.jsp, u suprotnom vraća odgovarajuće poruke na index.jsp 			(15 bodova)
+o	doGet radi „LOGOUT“ i poništava sesiju i vraća klijenta na index.jsp 						(5 bodova)
+Kreirati prikaz.php prikazje user i pass Klijenta ako postoji sesija, u suptrotnom radi se se redirekcija na index.jsp
+Link za logout koji briše sesiju i vraća nas na index.	 (15 bodova)
