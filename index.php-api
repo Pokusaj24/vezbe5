@@ -1,0 +1,11 @@
+<?php
+require 'flight/Flight.php';
+require '../DAO.php';
+
+Flight::route('GET /studenti/boljiOD/@prosek', function($prosek) {
+    $dao = new DAO();
+    echo json_encode($dao->boljiOD($prosek));
+});
+
+Flight::start();
+?>
